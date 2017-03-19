@@ -2,7 +2,9 @@
 
 angular.module('seal-app', [
   'ngAnimate',
-  'ui.router'
+  'ui.router',
+
+  'user-controllers'
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
@@ -28,7 +30,7 @@ angular.module('seal-app', [
                         if(rejection.status == 500) {
                             $injector.get('$state').transitionTo('error.servererror');
                         }
-                        
+
                         return $q.reject(rejection);
                     }
                 };
