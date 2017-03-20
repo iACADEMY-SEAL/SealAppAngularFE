@@ -4,7 +4,11 @@ angular.module('seal-app', [
   'ngAnimate',
   'ui.router',
 
-  'user-controllers'
+  'home-controllers',
+  'home-directives',
+
+  'user-controllers',
+  'user-directives'
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
