@@ -25,6 +25,10 @@ angular.module('seal-app', [
                 url: '/',
                 templateUrl: templatesPath + 'home.html' /* js/app/partials/home.html */
             })
+            .state('login', {
+                url: '/login',
+                templateUrl: templatesPath + 'user/login.html' /* js/app/partials/home.html */
+            })
             ;
 
 
